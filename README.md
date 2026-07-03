@@ -1,3 +1,5 @@
+<img src="files/saoas.png" alt="Logo de SAOAS" width="200"/>
+
 # MEM-saoas
 
 `saoas` (Structural Analysis of Atomic Systems) is a C++ implementation of the
@@ -16,6 +18,12 @@ Theoretical background:
   bonded interactions*, Engineering with Computers.
   [Springer](https://link.springer.com/article/10.1007/s00366-024-02085-w)
 
+  ## Tutorials
+
+You can find tutorials and additional documentation on my website:
+
+[MEM Tutorials](https://andresfernandezsanmiguel.github.io/MEM/)
+
 ## Dependencies
 
 - C++17 compiler
@@ -25,16 +33,6 @@ Theoretical background:
 
 Eigen and Spectra are downloaded automatically at configure time via CMake
 `FetchContent` — no manual installation needed.
-
-## Build
-
-```bash
-git clone https://github.com/<your-username>/MEM-saoas.git
-cd MEM-saoas
-mkdir build && cd build
-cmake ..
-cmake --build . -j
-```
 
 This produces the `saoas` executable inside `build/`.
 
