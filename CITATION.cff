@@ -3,9 +3,9 @@ message: "If you use this software, please cite it as below, and see the referen
 title: "MEM-saoas: Structural Analysis of Atomic Systems (Molecular Element Method)"
 type: software
 authors:
-  - name: "<Tu Nombre / Institución>"
+  - name: "< Andrés Fernández San Miguel>"
 license: LicenseRef-PolyForm-Noncommercial-1.0.0
-repository-code: "https://github.com/<your-username>/MEM-saoas"
+repository-code: "https://github.com/AndresFernandezSanMiguel/MEM-Linear"
 preferred-citation:
   type: article
   title: "A first order FEM-based formulation for the analysis of molecular structures with bonded interactions"
