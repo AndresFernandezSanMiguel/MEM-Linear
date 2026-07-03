@@ -2,7 +2,7 @@
 
 # MEM-saoas
 
-`saoas` (Structural Analysis of Atomic Systems) is a C++ implementation of the
+`saoas` (Structural Analysis of Atomic Structures) is a C++ implementation of the
 **Molecular Element Method (MEM)**: a FEM-based formulation for the linear
 elastic analysis of atomic structures (static response and normal-mode /
 vibrational analysis) from a classical force field.
@@ -27,14 +27,8 @@ You can find tutorials and additional documentation on my website:
 ## Dependencies
 
 - C++17 compiler
-- CMake ≥ 3.14
 - [Eigen](https://eigen.tuxfamily.org) (header-only)
 - [Spectra](https://spectralib.org) (header-only, built on Eigen)
-
-Eigen and Spectra are downloaded automatically at configure time via CMake
-`FetchContent` — no manual installation needed.
-
-This produces the `saoas` executable inside `build/`.
 
 ## Usage
 
@@ -65,8 +59,8 @@ neldi=<number of dihedrals>
     (constrained DOFs removed), solved with a shift-invert Cholesky operator.
   - any other value — treated as a **free molecule**: `K` is positive
     semi-definite (6 rigid-body modes), solved as the generalized eigenproblem
-    `K φ = λ M φ` in Cholesky mode; the 6 zero-eigenvalue rigid modes are
-    excluded automatically.
+    `K φ = λ M φ`; the 6 zero-eigenvalue rigid modes are
+    excluded automatically, since we start by calculating the highest eigenvalues
 
 Followed by, in order:
 
@@ -94,7 +88,7 @@ At runtime, if `modo != "S"`, the program interactively asks for:
 
 - `disp.txt` — global displacement vector `u` from the static solve.
 - `autoval.txt` — converged eigenvalues above `lamlim`.
-- `normal.nmd` — normal modes in [ProDy](http://prody.csb.pitt.edu/)/NMD
+- `normal.nmd` — normal modes in NMD
   format (viewable in VMD's Normal Mode Wizard).
 - `deformation.pdb` — multi-model PDB trajectory interpolating from the
   original to the scaled deformed geometry, with the per-atom displacement
