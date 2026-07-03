@@ -101,13 +101,6 @@ This project is distributed under the **PolyForm Noncommercial License
 educational, charitable, governmental), but **not licensed for commercial
 use**. See [`LICENSE`](./LICENSE) for the full text.
 
-For commercial licensing inquiries, contact: `<your-email>`.
-
-> Before publishing, remember to fill in `[YEAR]` / `[YOUR NAME OR
-> INSTITUTION]` in the `LICENSE` file, and check with your university's
-> tech-transfer office if the code was developed under an institutional or
-> funded project, since ownership terms may apply.
-
 ## Citing
 
 If you use this code in your research, please cite the two references listed
