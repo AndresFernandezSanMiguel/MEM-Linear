@@ -1,4 +1,4 @@
-<img src="files/logo_saoas.png" alt="Logo de SAOAS" width="400"/>
+<img src="files/logo_saoas_trans.png" alt="Logo de SAOAS" width="400"/>
 
 # MEM-saoas
 
