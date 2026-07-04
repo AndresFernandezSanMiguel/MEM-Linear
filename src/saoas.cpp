@@ -17,7 +17,7 @@
        Engineering with Computers (2024). https://doi.org/10.1007/s00366-024-02085-w
 
  License: PolyForm Noncommercial 1.0.0 - see LICENSE file.
- Repository: https://github.com/<your-username>/MEM-saoas
+ Repository: https://github.com/AndresFernandezSanmiguel/MEM-saoas
 ==============================================================================*/
 
 #include<iostream>
