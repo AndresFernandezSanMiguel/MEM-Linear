@@ -418,7 +418,6 @@ void calcul(int nnodo,MatrixXi &mres,
         }
     }
 
-    // Write autoval.txt
     ofstream feig("autoval.txt");
     if(feig){
         feig<<"________________________________________________________"<<endl;
@@ -485,7 +484,6 @@ void estatico(int nnodo,MatrixXi &mres,
         if(mres(0,i)!=0) u_global(i)=u_red(mres(1,i));
     }
 
-    // Write displacements to disp.txt
     ofstream escr("disp.txt");
     if(escr){
         escr<<"________________________________________________________"<<endl;
@@ -506,11 +504,6 @@ void estatico(int nnodo,MatrixXi &mres,
     }
     escr.close();
 
-    // Write deformation.pdb: multi-model PDB trajectory from original to deformed
-    // B-factor = displacement magnitude |u_i| for color mapping in VMD
-
-    // Precompute displacement magnitudes, normalized to [0,100] for B-factor
-    // VMD colors by B-factor; [0,100] gives full color range
     VectorXd bmag(nnodo);
     for(int i=0;i<nnodo;i++){
         double ux=u_global(3*i), uy=u_global(3*i+1), uz=u_global(3*i+2);
