@@ -1,0 +1,82 @@
+--------------------------------------------------------
+Simulation Mode
+________________________________________________________
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+FV<--Free Vibrations of Molecules (without restraints)
+RV<--Vibrations of Molecules (with restraints)
+S<--Static Analysis (K u=f)
+--------------------------------------------------------
+--------------------------------------------------------
+Mode=FV
+--------------------------------------------------------
+
+--------------------------------------------------------
+General Data
+________________________________________________________
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+nnodo<--Number of Nuclei
+neles<--Number of Stretch Potentials
+nelan<--Number of Angular Potentials
+neldi<--Number of Dihedral Potentials
+--------------------------------------------------------
+nnodo=4
+neles=3
+nelan=2
+neldi=1
+--------------------------------------------------------
+
+--------------------------------------------------------
+Atomic Data
+________________________________________________________
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+N_i<--Global number of nuclei
+m_i<--Mass of nuclei N_i
+x_i y_i z_i<--Coordinates of nuclei N_i
+u_i v_i w_i<--Displacement restraints [0=fixed,1=free]
+f_xi f_yi f_zi<--Applied forces
+--------------------------------------------------------
+N_i m_i x_i y_i z_i u_i v_i w_i f_xi f_yi f_zi
+0 1.008 4.8337 -9.43708 8.33857 1 1 1 0.0 0.0 0.0
+1 15.9994 0.0 -7.265 0.0 1 1 1 0.0 0.0 0.0
+2 15.9994 0.0 7.265 0.0 1 1 1 0.0 0.0 0.0
+3 1.008 4.8337 9.43708 -8.33857 1 1 1 0.0 0.0 0.0
+--------------------------------------------------------
+
+--------------------------------------------------------
+Stretch Potentials
+________________________________________________________
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+N_i N_j<--Nuclei indices
+k_l<--Stretch force constant
+--------------------------------------------------------
+N_i N_j k_l
+--------------------------------------------------------
+1 0 10.967
+2 3 10.967
+1 2 13.043
+--------------------------------------------------------
+
+--------------------------------------------------------
+Angular Potentials
+________________________________________________________
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+N_i N_j N_k<--Nuclei indices (N_j is central)
+k_o<--Angular force constant
+--------------------------------------------------------
+N_i N_j N_k k_o
+--------------------------------------------------------
+0 1 2 300.007
+1 2 3 300.007
+--------------------------------------------------------
+
+--------------------------------------------------------
+Dihedral Potentials
+________________________________________________________
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+N_i N_j N_k N_l<--Nuclei indices
+k_p<--Dihedral force constant
+--------------------------------------------------------
+N_i N_j N_k N_l k_p
+--------------------------------------------------------
+0 1 2 3 21.555
+--------------------------------------------------------
