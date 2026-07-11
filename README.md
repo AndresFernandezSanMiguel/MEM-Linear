@@ -26,7 +26,7 @@ You can find tutorials and additional documentation on my website:
 
 ## Dependencies
 
-- C++ compiler $\Rightarrow$ [Recommended](https://jmeubank.github.io/tdm-gcc/)
+- [Recommended C++ compiler](https://jmeubank.github.io/tdm-gcc/)
 - [Eigen](https://eigen.tuxfamily.org) (header-only)
 - [Spectra](https://spectralib.org) (header-only, built on Eigen)
 
